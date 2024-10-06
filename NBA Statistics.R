@@ -1,6 +1,6 @@
 library(caret)
 #import team stat 22-23
-ts2122 <- read.csv("~/Downloads/ts2122.R")
+ts2122 <- read.csv("ts2122.R")
 attach(ts2122)
 #delete unuseful data
 ts2122$X.1 <- NULL
@@ -133,7 +133,7 @@ par()
 plot(ts2122$X3P.,ts2122$WIN.,xlab = "X3P. contender", ylab = "WIN. contender", pch = 16, col = "green", main = "X3P.and WIN.")
 
 #predictions
-ts2223 <- read.csv("~/Downloads/ts2223.R")
+ts2223 <- read.csv("ts2223.R")
 View(ts2223)
 ts2223 <- ts2223[-c(9, 27, 11, 4, 25, 30, 12, 22), ]
 View(ts2223)
@@ -152,7 +152,7 @@ RMSE
 print(adjusted_R2)
 
 #further conclusion
-seasons <- read.csv("~/Downloads/seasons.R")
+seasons <- read.csv("seasons.R")
 attach(seasons)
 View(seasons)
 par()
